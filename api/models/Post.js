@@ -4,9 +4,6 @@ const PostSchema=new mongoose.Schema({
     username:{
         type:String
     },
-    name:{
-        type:String
-    },
     age:{
        type:Number
     },
@@ -15,7 +12,119 @@ const PostSchema=new mongoose.Schema({
     },
     s1:{
         type:String,
-    }
+    },
+    img:
+    {
+        
+        type: String
+    },
+    fatherName:{
+        type:String,
+    },
+    occupation:{
+        type:String,
+    },
+    village:{
+        type:String,
+    },
+    taluka:{
+    
+        type:String,
+    },
+    state:{
+        type:String,
+    },
+    district:{
+        type:String,
+    },
+    pincode:{
+        type:String,
+    },
+    daridra:{
+        type:String,
+    },
+
+    daridrano:{
+        type:String,
+    },
+    daridra1:{
+        type:String,
+    },
+    arthikyr:{
+        type:String,
+    },
+    utpan:{
+        type:String,
+    },
+    mule:{
+        type:String,
+    },
+    gun:{
+        type:String,
+    },
+    muleno:{
+
+        type:String,
+    },
+    lagn:{
+        type:String,
+    },
+    vibhakta:{
+        type:String,
+    },
+    sonmarrige:{
+        type:String,
+    },
+    vibhakta1:{
+        type:String,
+    },
+    Nokri:{
+        type:String,
+    },
+    Nokariaddr:{
+        type:String,
+    },
+    tarik:{
+        type:String,
+    },
+    s_Nokri:{
+        type:String,
+    },
+    ageproof:{
+        type:String,
+    },
+    ageproof1:{
+        type:String,
+    },
+    lc:{
+        type:String,
+    },
+    s3:{
+        type:String,
+    },
+    fullname2:{
+        type:String,
+    },
+    village1:{
+        type:String,
+    },
+    taluka1:{
+        type:String,
+    },
+    state1:{
+        type:String,
+    },
+    district1:{
+        type:String,
+    },
+    pincode1:{
+        type:String,
+    },
+    sign:{
+        type:String,
+       
+   },
+  
 },
  {timestamps:true}
 );

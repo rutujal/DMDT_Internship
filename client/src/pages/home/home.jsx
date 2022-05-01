@@ -43,11 +43,15 @@ const Home = () => {
 
             <div className="main-container">
                 <div className="container">
-                    <button className="navitem">Affidavit</button>
+                     <button  className="navitem">
+                    <Link  to="/write2">Affidavit</Link></button>
                     <button className="navitem">शासकीय योजना</button>
                     <button className="navitem">खरेदी विक्री</button>
-                    <button className="navitem">Certificate</button>
-                    <button className="navitem">Validity Affidavits</button>
+                    <button  className="navitem">
+                    <Link  to="/cert1">Certificate</Link></button>
+                    <button  className="navitem">
+                    <Link  to="/form1">Validity Affidavits</Link></button>
+                    
                     <button className="navitem">हक्क सोड पत्र</button>
                 </div>
                 <div className="container2">

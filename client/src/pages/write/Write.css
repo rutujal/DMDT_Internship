@@ -132,5 +132,15 @@ label{
     padding:15px;
    
   }
-  
+  .button{
+    background-color: rgba(255, 145, 0, 0.904);
+    color:#fff;
+    border:none;
+    outline:none;
+    border-radius: 10px;
+    padding:6px 10px;
+    box-shadow: 2px 3px 4px rgba(26, 24, 22, 0.233);
+    cursor: pointer;
+    font-weight: 600;
+}
  
