@@ -95,9 +95,9 @@ export default function Write() {
                 </div>
               </div>
               <div className="col-md-3">
-              <button className="button"><Link  to="/cert1">APENDIX C/D HEIGHT CHEST CERTIFICATE</Link></button>
+              <button className="button" style={{marginTop:"10px"}}><Link  to="/cert1" className='link' >APENDIX C/D HEIGHT CHEST CERTIFICATE</Link></button>
           
-              <button className="button" ><Link  to="/cert2">Income Certificate</Link></button>
+              <button className="button" style={{marginTop:"10px"}}><Link  to="/cert2" className='link' >Income Certificate</Link></button>
           
               
               </div>
@@ -170,7 +170,7 @@ export default function Write() {
            
             
 
-            <button classNameName="writeSubmit" type="submit">Publish</button>
+            <button style={{backgroundColor:"#000080",color:"white",fontWeight:"40px",height:"40px"}} type="submit">Submit</button>
           </form>
 
         </div>) :

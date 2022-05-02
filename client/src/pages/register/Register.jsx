@@ -29,21 +29,22 @@ export default function Register() {
         <div className="register">
         <span className="loginTitle">Register</span>
             <form className="loginForm" onSubmit={handleSubmit}>
-                <label>Username</label>
+               
                 <input 
+            
                   type="text" 
                   className="loginInput" 
                   placeholder="Enter your Username..."
                   onChange={e=>setUsername(e.target.value)}
                   />
-                <label>Email</label>
+               
                 <input 
                   type="email" 
                   className="loginInput" 
                   placeholder="Enter your Email..."
                   onChange={e=>setEmail(e.target.value)}
                   />
-                <label>Password</label>
+             
                 <input
                  type="password" 
                  className="loginInput" 
@@ -52,7 +53,7 @@ export default function Register() {
                  />
                 <button className="registerButton" type="submit">Register</button>
             </form>
-            <button className="registerLoginButton">
+            <button className="registerLoginButton" style={{backgroundColor:"orange"}}>
                  <Link className="link" to="/login">Login</Link>
             </button>
             { error && <span style={{color:"red",marginTop:"10px"}}>Something went wrong!</span>}

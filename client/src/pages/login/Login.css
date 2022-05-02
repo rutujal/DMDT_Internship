@@ -8,12 +8,14 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
 }
 
 .loginTitle{
     font-size: 50px;
+    font-weight: bold;
+    color:#000080;
 }
 .loginForm{
     margin-top: 20px;
@@ -25,8 +27,11 @@
 }
 .loginInput{
     padding: 10px;
+    font-weight: bold;
+    color:#000080;
     background-color: white;
-    border: none;
+    border-radius: 20px;
+    border: 3px solid #000080;
 }
 .loginButton{
     cursor: pointer;
@@ -46,7 +51,7 @@
     position: absolute;
     top:60px;
     right: 20px;
-    background-color: teal;
+    background-color: orange;
     cursor: pointer;
     border: none;
     color: white;

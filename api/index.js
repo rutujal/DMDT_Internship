@@ -16,6 +16,7 @@ const form2Route=require("./routes/form2")
 const form3Route=require("./routes/form3")
 const form4Route=require("./routes/form4")
 const form6Route=require("./routes/form6")
+const ageRoute=require("./routes/age");
 const multer=require("multer");
 const path=require("path");
 
@@ -54,6 +55,7 @@ app.use("/api/form2",form2Route);
 app.use("/api/form3",form3Route);
 app.use("/api/form4",form4Route);
 app.use("/api/form6",form6Route);
+app.use("/api/age",ageRoute);
 
 app.listen("5000",()=>{
     console.log("Backend is running");

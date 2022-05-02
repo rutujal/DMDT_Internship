@@ -128,14 +128,7 @@ console.log(sign);
                 </div>
               </div>
               
-              <div className="col-md-3">
-                <select className="input" name="inputState">
-                  <option selected className="sinput">Gap Certificate</option>
-                  <option className="sinput">Maratha Caste Affidative</option>
-                  <option className="sinput"></option>
-                  <option className="sinput">A</option>
-                </select>
-              </div>
+              
             </div>
             <nav className="navbar navbar-light" style={{ backgroundColor: "#000080", height: "80px" }}>
               <div className="container-fluid">
@@ -248,7 +241,7 @@ console.log(sign);
               <input className="input" type="number" name="muleno" onChange={e => setMuleno(e.target.value)}/>
             </div>
             <div className="col-md-4">
-              <label for="inputState" className="form-label">Mulanche Lagn zale ahe kaAhe Ka?</label>
+              <label for="inputState" className="form-label">Mulanche Lagn zale ahe ka?</label>
               <select className="input" name="lagn" onChange={e => setLagn(e.target.value)} >
                
                 <option>No</option>
@@ -380,10 +373,11 @@ console.log(sign);
             
             <Webcam ref={webRef} style={{width:"250px",height:"250px"}}/>
    
-   <button className='bclass' style={{width:"70px",height:"30px"}} onClick={()=>{
+   <button className='bclass' style={{width:"70px",height:"30px",marginTop: "250px",
+    marginLeft: "-150px"}} onClick={()=>{
          ShowImage()
        }}>Click</button>
-            <button classNameName="writeSubmit" type="submit">Publish</button>
+            <button style={{backgroundColor:"#000080",color:"white",fontWeight:"40px",height:"40px"}} type="submit">Submit</button>
           </form>
 
         </div>) :
@@ -391,7 +385,13 @@ console.log(sign);
         
       }
       
-      <PDF age={age} fullName={fullName} s1={s1} s2={s2} occupation={occupation} village={village} img={img} fatherName={fatherName}/>
+      <PDF age={age} fullName={fullName} s1={s1} s2={s2} occupation={occupation} village={village} img={img} fatherName={fatherName}
+        taluka={taluka} state={state} district={district} pincode={pincode} daridra={daridra} daridrano={daridrano} daridra1={daridra1}
+        gun={gun}  utpan={utpan} mule={mule} arthikyr={arthikyr} muleno={muleno}
+     lagn={lagn} vibhakta={vibhakta} sonmarriage={sonmarriage} vibhakta1={vibhakta1} Nokri={Nokri} Nokriaddr={Nokriaddr} ageproof={ageproof}
+ageproof1={ageproof} s_Nokri={s_Nokri} tarik={tarik} lc={lc} s3={s3} fullname2={fullname2} village1={village1} taluka1={taluka1} pincode1={pincode1} state1={state1} district1={district1}  sign={sign}
+
+      />
     </>
    
   );

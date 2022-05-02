@@ -44,13 +44,13 @@ const Home = () => {
             <div className="main-container">
                 <div className="container">
                      <button  className="navitem">
-                    <Link  to="/write2">Affidavit</Link></button>
+                    <Link  to="/write2" className='link' >Affidavit</Link></button>
                     <button className="navitem">शासकीय योजना</button>
                     <button className="navitem">खरेदी विक्री</button>
                     <button  className="navitem">
-                    <Link  to="/cert1">Certificate</Link></button>
+                    <Link  to="/cert1" className='link'>Certificate</Link></button>
                     <button  className="navitem">
-                    <Link  to="/form1">Validity Affidavits</Link></button>
+                    <Link  to="/form1" className='link'>Validity Affidavits</Link></button>
                     
                     <button className="navitem">हक्क सोड पत्र</button>
                 </div>

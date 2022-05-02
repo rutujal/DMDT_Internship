@@ -1,4 +1,5 @@
 import React from 'react';
+import "../write/Write.css";
 import { Link } from 'react-router-dom';
 import { Context } from '../../context/Context';
 import "./Login.css";
@@ -31,21 +32,22 @@ export default function Login() {
         <div className="login">
         <span className="loginTitle">Login</span>
             <form className="loginForm" onSubmit={handleSubmit}>
-                <label>Username</label>
+               
                 <input 
+                
                 type="text" 
                 className="loginInput" 
                 placeholder="Enter your Username..."
                     ref={userRef}
                 />
-                <label>Password</label>
+                
                 <input 
                 type="password" 
                 className="loginInput" 
                 placeholder="Enter your Password..."
                     ref={passwordRef}
                 />
-                <button className="loginButton" type="submit" disabled={isFetching}>Login</button>
+                <button className="button" style={{marginTop:"20px"}} type="submit" disabled={isFetching}>Login</button>
             </form>
             <button className="loginRegisterButton">
                 <Link className="link" to="/register">Register</Link>

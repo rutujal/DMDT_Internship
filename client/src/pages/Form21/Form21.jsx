@@ -207,7 +207,7 @@ export default function Write() {
               <input className="input" type="text" name="authoDate" onChange={e => setAdate(e.target.value)}/>
             </div>
 
-            <button classNameName="writeSubmit" type="submit">Publish</button>
+            <button style={{backgroundColor:"#000080",color:"white",fontWeight:"40px",height:"40px"}} type="submit">Submit</button>
           </form>
 
         </div>) :

@@ -23,7 +23,7 @@ export default function Write() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const newForm1= {
+    const newForm1 = {
       username: user.username,
       age,
       s1,
@@ -35,7 +35,7 @@ export default function Write() {
       state,
       district,
       pincode,
-     
+
     };
 
     try {
@@ -72,7 +72,7 @@ export default function Write() {
                   <button className="bclass">View Balance</button>
 
                   <input className="me-2" type="search" placeholder="Search" aria-label="Search" />
-                 
+
                 </div>
               </div>
 
@@ -85,26 +85,28 @@ export default function Write() {
               </div>
               <div className="col-md-3">
                
-                <button  className="button">
-                    <Link  to="/form2">Education(Form-3[1])</Link></button>
-                <div className="col-md-3">
-                <button  className="button">
-                    <Link  to="/form1">Education(Form 17)</Link></button>
-                <div className="col-md-3"></div>
-                <button  className="button">
-                    <Link  to="/form3">Election(Form3[1])</Link></button>
-                <div className="col-md-3"></div>
-                <button  className="button">
-                    <Link  to="/form4">Education(Form 15)</Link></button>
-                    <button  className="button">
-                    <Link  to="/form21">Education(Form 21)</Link></button>
-                    <button  className="button">
-                    <Link  to="/form6">Service(Form 31)</Link></button>
-                    
-                
+                <button className="button" style={{marginTop:"10px"}}>
+                  <Link to="/form2" className='link'>Education(Form-3[1])</Link></button>
+
+                <button className="button" style={{marginTop:"10px",marginLeft:"10px"}}>
+                  <Link to="/form1" className='link'>Education(Form 17)</Link></button>
+                  <button className="button" style={{marginTop:"10px"}}>
+                  <Link to="/form6" className='link'>Service(Form 31)</Link></button>
+              </div>  
+              <div className="col-md-3" >
+              <button className="button" style={{marginTop:"10px"}}>
+                  <Link to="/form3" className='link'>Election(Form3[1])</Link></button>
+              
+                <button className="button" style={{marginTop:"10px",marginLeft:"10px"}}>
+                  <Link to="/form4" className='link'>Election(Form 15)</Link></button>
+                <button className="button" style={{marginTop:"10px"}}> 
+                  <Link to="/form21" className='link'>Election(Form 21)</Link></button>
+               
+
 
               </div>
-              </div>
+
+
             </div>
             <nav className="navbar navbar-light" style={{ backgroundColor: "#000080", height: "80px" }}>
               <div className="container-fluid">
@@ -129,7 +131,7 @@ export default function Write() {
               <label for="inputPassword4" className="form-label">Full Name</label>
               <input type="text" className="input form control" onChange={e => setfullName(e.target.value)} />
             </div>
-           
+
             <div className="col-md-4">
               <label for="inputAddress" className="form-label">Father Name</label>
               <input className="input" type="text" name="father" placeholder="" onChange={e => setfName(e.target.value)} />
@@ -145,12 +147,12 @@ export default function Write() {
             <div className="col-md-4">
               <label for="inputState" className="form-label">Village</label>
               <input className="input " type="text" name="village" onChange={e => setVil(e.target.value)} />
-             
+
             </div>
             <div className="col-md-4">
               <label for="inputState" className="form-label">Taluka</label>
               <input className="input " type="text" name="taluka" onChange={e => setTal(e.target.value)} />
-            
+
             </div>
             <div className="col-md-4">
               <label for="inputState" className="form-label">State</label>
@@ -162,18 +164,18 @@ export default function Write() {
             </div>
             <div className="col-md-4">
               <label for="inputCity" className="form-label">Pincode</label>
-              <input className="input" type="number" name="pincode" onChange={e => setPin(e.target.value)}/>
+              <input className="input" type="number" name="pincode" onChange={e => setPin(e.target.value)} />
             </div>
-           
 
 
-            <button classNameName="writeSubmit" type="submit">Publish</button>
+
+            <button style={{backgroundColor:"#000080",color:"white",fontWeight:"40px",height:"40px"}} type="submit">Submit</button>
           </form>
 
         </div>) :
         <PDF age={age} fullName={fullName} s1={s1} />
       }
-      <PDF age={age} fullName={fullName} s1={s1}  occupation={occupation} village={village} fatherName={fatherName} />
+      <PDF age={age} fullName={fullName} s1={s1} occupation={occupation} village={village} fatherName={fatherName} />
     </>
 
   );

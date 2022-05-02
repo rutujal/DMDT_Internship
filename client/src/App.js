@@ -14,6 +14,7 @@ import Form6 from "./pages/serv/form6";
 import Write1 from "./pages/write1/Write1";
 import Write3 from "./pages/write3/Write3";
 import Certificate2 from "./pages/certificate2/Certificate2";
+import Age from "./pages/Age/Age";
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 import {useContext} from "react";
 import { Context } from "./context/Context";
@@ -42,6 +43,7 @@ function App() {
         <Route path="/form3"> <Form3/></Route> 
         <Route path="/form4"> <Form4/></Route> 
         <Route path="/form6"> <Form6/></Route>
+        <Route path="/age"><Age/></Route>
     </Switch>
     
     

@@ -121,17 +121,17 @@ const GapPage = () => {
                   <h3>GENERAL AFFIDAVIT</h3>
                 </div>
               </div>
-              <div className="col-md-3">
-              <button className="button" onClick={GapPage}>Gap Certificate</button>
+              <div className="col-md-3" style={{display:"block"}}>
+              <button className="button" onClick={GapPage} style={{marginTop:"10px"}}>Gap Certificate</button>
           
-              <button className="button" onClick={AffidativePage}>Gharatle Koni Nokrila Nhi Affidavit</button>
+              <button className="button" onClick={AffidativePage} style={{marginTop:"10px"}}>Gharatle Koni Nokrila Nhi Affidavit</button>
           
-              <button  className="button">
-                    <Link  to="/write1">Maratha Caste Affidavit</Link></button>
+              <button  className="button" style={{marginTop:"10px"}}>
+                    <Link  to="/write1" className='link'>Maratha Caste Affidavit</Link></button>
         
             
-              <button  className="button">
-                    <Link  to="/write3">sarv marganni milnare utpannache affidavit</Link></button>
+              <button  className="button" style={{marginTop:"10px"}}>
+                    <Link  to="/write3" className='link'>sarv marganni milnare utpannache affidavit</Link></button>
               
               </div>
               
@@ -279,7 +279,7 @@ const GapPage = () => {
             </div>
 
 
-            <button classNameName="writeSubmit" type="submit">Publish</button>
+            <button style={{backgroundColor:"#000080",color:"white",fontWeight:"40px",height:"40px"}} type="submit">Submit</button>
           </form>
 
         </div>) :
