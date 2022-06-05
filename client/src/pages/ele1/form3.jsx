@@ -62,7 +62,7 @@ export default function Write() {
       {!postSubmitted ?
 
         (<div>
-
+                
           <form className="writeForm row g-3" onSubmit={handleSubmit} >
             <nav style={{ backgroundColor: "#000080" }} className="navbar navbar-light" >
               <div className="container-fluid">

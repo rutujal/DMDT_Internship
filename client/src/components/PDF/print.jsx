@@ -35,12 +35,7 @@ const PDF=(props)=>{
                 {props.lc?<li>Shala Sodlyacha Dakhla?:{props.lc}</li>:null}
 
                 {props.ageproof1?<li>vayacha purava?:{props.ageproof1}</li>:null}
-                {props.ageproof1?<li>vayacha purava?:{props.ageproof1}</li>:null}
-                {props.ageproof1?<li>vayacha purava?:{props.ageproof1}</li>:null}
-                {props.ageproof1?<li>vayacha purava?:{props.ageproof1}</li>:null}
-
-                {props.ageproof1?<li>vayacha purava?:{props.ageproof1}</li>:null}
-                {props.ageproof1?<li>vayacha purava?:{props.ageproof1}</li>:null}
+                
 
                 {props.fullName1?<li>Full Name:{props.s3} {props.fullName1}</li>:null}
                 {props.village1?<li>Village:{props.village1}</li>:null}
