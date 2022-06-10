@@ -4,7 +4,7 @@ import { useState, useContext } from 'react';
 import axios from 'axios';
 import { Context } from '../../context/Context';
 import { Link } from 'react-router-dom';
-import PDF from '../../components/PDF/print';
+import PDF from '../../components/PDF/agepdf';
 
 export default function Write() {
   let postSubmitted = false;
